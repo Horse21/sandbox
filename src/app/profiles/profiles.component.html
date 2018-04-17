@@ -1,0 +1,18 @@
+<div class='container-fluid'>
+  <div class="row">
+    <div class="col-12">
+      <div class="content">
+        <dx-tabs #dxTabs
+                 [dataSource]="tabs"
+                 [selectedIndex]="0"></dx-tabs>
+
+        <div [hidden]="dxTabs.selectedIndex != 0">
+          <h21-dashboard [dashboard]="dashboard"></h21-dashboard>
+        </div>
+
+        <div [hidden]="dxTabs.selectedIndex != 1">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
