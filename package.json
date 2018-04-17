@@ -36,8 +36,8 @@
   "devDependencies": {
     "@angular-devkit/schematics": "0.0.34",
     "@angular/animations": "5.2.6",
-    "@angular/cdk": "5.2.3",
-    "@angular/cli": "1.4.9",
+    "@angular/cdk": "^5.2.3",
+    "@angular/cli": "1.7.4",
     "@angular/common": "5.2.6",
     "@angular/compiler": "5.2.6",
     "@angular/compiler-cli": "^5.2.8",
