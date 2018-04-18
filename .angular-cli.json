@@ -23,7 +23,7 @@
         "../node_modules/normalize.css/normalize.css",
         "../node_modules/bootstrap/dist/css/bootstrap.min.css",
         "../node_modules/h21-custom-css/dist/android5.light.custom.css",
-        "./styles.css"
+        "styles.css"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
