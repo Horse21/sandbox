@@ -6,15 +6,5 @@
 import {IEnvironment} from './environment.interface';
 
 export const environment: IEnvironment = {
-  production: false,
-  core: {
-    target: 'dev',
-    apiRootUrl: 'http://localhost:5010/api/',
-    clientRootUrl: 'http://localhost:4200/',
-    identityUrl: 'http://localhost:5000/',
-    referencesUrl: 'http://localhost:5001/api/',
-    fileStorageUrl: 'http://localhost:5004/api/',
-    authClientId: "travelport.ui",
-    authScope: "openid profile identityserver filestorage travelport"
-  }
+  production: false
 };
