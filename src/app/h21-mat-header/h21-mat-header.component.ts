@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ViewEncapsulation } from '@angular/core';
+import { MatMenuTrigger } from '@angular/material';
 
 @Component({
   selector: 'h21-mat-header',

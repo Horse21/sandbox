@@ -5,6 +5,7 @@
   position: fixed;
   z-index: 100;
   width: 100%;
+  background: #4054b2;
 }
 .content-container {
   height: calc(100% - 64px);

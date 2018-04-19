@@ -6,6 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppMaterialModule } from './modules/app-material.module';
 import { H21MatHeaderComponent } from './h21-mat-header/h21-mat-header.component';
 import { H21MatSidebarNavComponent } from './h21-mat-sidebar-nav/h21-mat-sidebar-nav.component';
+import { HttpClientModule } from '@angular/common/http';
 
 const routes: Routes = [
   {path: '', redirectTo: '/', pathMatch: 'full'},
@@ -22,7 +23,8 @@ const routes: Routes = [
     BrowserModule,
     RouterModule.forRoot(routes),
     BrowserAnimationsModule,
-    AppMaterialModule
+    AppMaterialModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

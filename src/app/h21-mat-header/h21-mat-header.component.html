@@ -1,17 +1,60 @@
 <nav>
-  <mat-toolbar color="primary">
-    <a mat-button href="/">Horse21.Pro</a>
+  <mat-toolbar>
+    <a class="header-logo" mat-button href="/">
+      <mat-icon svgIcon="logo"></mat-icon>
+      <span>Horse21.Pro</span>
+    </a>
 
-    <span class="h21-mat-header-spacer">&nbsp;</span>
+    <span class="header-spacer">&nbsp;</span>
 
-    <a mat-icon-button href="#">
+    <button class="header-button" mat-icon-button
+            #notificationBtn="matMenuTrigger"
+            [matMenuTriggerFor]="notificationMenu"
+            (mouseover)="notificationBtn.openMenu()">
+      <span class="header-button_notification-label">2</span>
       <mat-icon aria-label="">notifications</mat-icon>
-    </a>
-    <a mat-icon-button href="#" title="">
+    </button>
+    <button class="header-button" mat-icon-button [matMenuTriggerFor]="servicesMenu">
       <mat-icon aria-label="">dialpad</mat-icon>
-    </a>
-    <a mat-icon-button href="#">
+    </button>
+    <button class="header-button" mat-icon-button>
       <mat-icon aria-label="">person</mat-icon>
-    </a>
+    </button>
   </mat-toolbar>
+
+  <!--[panelClass]="header-menu"-->
+
+    <mat-menu #servicesMenu="matMenu" yPosition="below" [overlapTrigger]="false">
+    <ng-template matMenuContent>
+      <button mat-menu-item>
+        <mat-icon>work</mat-icon>
+        <span>First project</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>watch_later</mat-icon>
+        <span>Second project</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>videocam</mat-icon>
+        <span>The third project</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>flag</mat-icon>
+        <span>Fourth, last project</span>
+      </button>
+    </ng-template>
+  </mat-menu>
+
+  <mat-menu #notificationMenu="matMenu" yPosition="below" [overlapTrigger]="false">
+    <ng-template matMenuContent>
+      <div (mouseleave)="notificationBtn.closeMenu()">
+        <button mat-menu-item>
+          <span>First notification</span>
+        </button>
+        <button mat-menu-item>
+          <span>Second notification</span>
+        </button>
+      </div>
+    </ng-template>
+  </mat-menu>
 </nav>
