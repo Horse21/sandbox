@@ -8,7 +8,7 @@
   background: #4054b2;
 }
 .content-container {
-  height: calc(100% - 64px);
+  height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -28,4 +28,12 @@
   flex-basis: 100%;
   padding: 16px;
   box-sizing: border-box;
+}
+.line-separator {
+  height: 50px;
+  clear: both;
+}
+.example-container {
+  padding: 20px;
+  border: 1px dashed #efefef;
 }
