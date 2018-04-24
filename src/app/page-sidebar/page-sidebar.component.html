@@ -1,0 +1,40 @@
+<nav class="c-page-sidebar">
+  <mat-accordion>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>Style</mat-panel-title>
+      </mat-expansion-panel-header>
+      <ul>
+        <li class="menu_item"><a mat-button href="#">Layout</a></li>
+        <li class="menu_item"><a mat-button href="#">Colors</a></li>
+        <li class="menu_item"><a mat-button href="#">Typography</a></li>
+        <li class="menu_item"><a mat-button href="#">Icons</a></li>
+        <li class="menu_item"><a mat-button href="#">Logotype</a></li>
+      </ul>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title>Compotes</mat-panel-title>
+      </mat-expansion-panel-header>
+      <ul>
+        <li><a mat-button href="#">Search components</a></li>
+        <li><a mat-button href="#">Forms</a></li>
+        <li><a mat-button href="#">Buttons</a></li>
+        <li><a mat-button href="#">Tabs</a></li>
+        <li><a mat-button href="#">Tooltips</a></li>
+        <li><a mat-button href="#">Grid</a></li>
+        <li><a mat-button href="#">Images</a></li>
+      </ul>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title>How to use</mat-panel-title>
+      </mat-expansion-panel-header>
+      <ul>
+        <li><a mat-button href="#">Article</a></li>
+      </ul>
+    </mat-expansion-panel>
+  </mat-accordion>
+</nav>

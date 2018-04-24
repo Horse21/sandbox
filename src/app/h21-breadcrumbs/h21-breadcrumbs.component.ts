@@ -2,12 +2,12 @@ import { Component, Input } from "@angular/core"
 import { BreadCrumb } from "../../dto/BreadCrumb";
 
 @Component({
-  selector: 'h21-mat-breadcrumb',
-  templateUrl: './h21-mat-breadcrumb.component.html',
-  styleUrls: ['./h21-mat-breadcrumb.component.css']
+  selector: 'h21-breadcrumbs',
+  templateUrl: './h21-breadcrumbs.component.html',
+  styleUrls: ['./h21-breadcrumbs.component.css']
 })
 
-export class H21MatBreadCrumbComponent {
+export class H21BreadcrumbsComponent {
 
   @Input() lastIsLink: boolean = false;
   @Input() showHomeLink: boolean = true;

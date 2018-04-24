@@ -1,46 +1,32 @@
-<header class="header-container">
-  <h21-mat-header></h21-mat-header>
-</header>
-<section class="content-container">
-  <div class="content-container_sidebar">
-    <h21-mat-sidebar-nav></h21-mat-sidebar-nav>
-  </div>
-  <div class="content-container_content">
-    <h1>Breadcrumb examples</h1>
+<div class="page">
+  <header class="page_header">
+    <page-header></page-header>
+  </header>
+  <main class="page_body">
+    <mat-sidenav-container>
+      <mat-sidenav opened="true" mode ="side">
+        <page-sidebar></page-sidebar>
+      </mat-sidenav>
+      <mat-sidenav-content>
+        <h1>Breadcrumb examples</h1>
+        <div class="line-separator">&nbsp;</div>
+        <div class="example-container">
+          <h21-breadcrumbs></h21-breadcrumbs>
+        </div>
+        <example-viewer [example]="getBreadCrumbExample1()"></example-viewer>
+        <div class="line-separator">&nbsp;</div>
+        <div class="example-container">
+          <h21-breadcrumbs [lastIsLink]="true"></h21-breadcrumbs>
+        </div>
+        <example-viewer [example]="getBreadCrumbExample2()"></example-viewer>
+        <div class="line-separator">&nbsp;</div>
+        <div class="example-container">
+          <h21-breadcrumbs [showHomeLink]="false"></h21-breadcrumbs>
+        </div>
+        <example-viewer [example]="getBreadCrumbExample3()"></example-viewer>
 
-    <div class="line-separator">&nbsp;</div>
-
-    <div class="example-container">
-      <h21-mat-breadcrumb></h21-mat-breadcrumb>
-    </div>
-    <h21-mat-component-example-viewer [example]="getBreadCrumbExample1()"></h21-mat-component-example-viewer>
-
-    <div class="line-separator">&nbsp;</div>
-
-    <div class="example-container">
-      <h21-mat-breadcrumb [lastIsLink]="true"></h21-mat-breadcrumb>
-    </div>
-    <h21-mat-component-example-viewer [example]="getBreadCrumbExample2()"></h21-mat-component-example-viewer>
-
-    <div class="line-separator">&nbsp;</div>
-
-    <div class="example-container">
-      <h21-mat-breadcrumb [showHomeLink]="false"></h21-mat-breadcrumb>
-    </div>
-    <h21-mat-component-example-viewer [example]="getBreadCrumbExample3()"></h21-mat-component-example-viewer>
-
-  </div>
-</section>
-
-
-
-
-
-
-
-
-<!--<div class="app-border">-->
-  <!--<a class="btn btn-sm btn-outline-primary" [routerLink]="['/', 'test']">Test</a>-->
-  <!--<a class="btn btn-sm btn-outline-primary" [routerLink]="['/', 'components']">Components</a>-->
-<!--</div>-->
-<!--<router-outlet></router-outlet>-->
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+  </main>
+  <footer class="page_footer"></footer>
+</div>

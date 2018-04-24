@@ -20,7 +20,7 @@ export class AppComponent {
   getBreadCrumbExample1():Example {
     return {
       title: "Example 1 - base",
-      textHtml: "<h21-mat-breadcrumb></h21-mat-breadcrumb>",
+      textHtml: "<h21-breadcrumbs></h21-breadcrumbs>",
       textCss: ".breadcrumb-nav {\n" +
       "  border-bottom: 1px solid #d6d6d6;\n" +
       "  padding: 3px 0;\n" +
@@ -96,12 +96,12 @@ export class AppComponent {
       "import { BreadCrumb } from \"../../dto/BreadCrumb\";\n" +
       "\n" +
       "@Component({\n" +
-      "  selector: 'h21-mat-breadcrumb',\n" +
-      "  templateUrl: './h21-mat-breadcrumb.component.html',\n" +
-      "  styleUrls: ['./h21-mat-breadcrumb.component.css']\n" +
+      "  selector: 'h21-breadcrumbs',\n" +
+      "  templateUrl: './h21-breadcrumbs.component.html',\n" +
+      "  styleUrls: ['./h21-breadcrumbs.component.css']\n" +
       "})\n" +
       "\n" +
-      "export class H21MatBreadCrumbComponent {\n" +
+      "export class H21BreadcrumbsComponent {\n" +
       "\n" +
       "  @Input() lastIsLink: boolean = false;\n" +
       "  @Input() showHomeLink: boolean = true;\n" +
@@ -119,7 +119,7 @@ export class AppComponent {
   getBreadCrumbExample2():Example {
     return {
       title: "Example 2 - the last element is a link",
-      textHtml: "<h21-mat-breadcrumb [lastIsLink]=\"true\"></h21-mat-breadcrumb>",
+      textHtml: "<h21-breadcrumbs [lastIsLink]=\"true\"></h21-breadcrumbs>",
       textCss: ".breadcrumb-nav {\n" +
       "  border-bottom: 1px solid #d6d6d6;\n" +
       "  padding: 3px 0;\n" +
@@ -195,12 +195,12 @@ export class AppComponent {
       "import { BreadCrumb } from \"../../dto/BreadCrumb\";\n" +
       "\n" +
       "@Component({\n" +
-      "  selector: 'h21-mat-breadcrumb',\n" +
-      "  templateUrl: './h21-mat-breadcrumb.component.html',\n" +
-      "  styleUrls: ['./h21-mat-breadcrumb.component.css']\n" +
+      "  selector: 'h21-breadcrumbs',\n" +
+      "  templateUrl: './h21-breadcrumbs.component.html',\n" +
+      "  styleUrls: ['./h21-breadcrumbs.component.css']\n" +
       "})\n" +
       "\n" +
-      "export class H21MatBreadCrumbComponent {\n" +
+      "export class H21BreadcrumbsComponent {\n" +
       "\n" +
       "  @Input() lastIsLink: boolean = false;\n" +
       "  @Input() showHomeLink: boolean = true;\n" +
@@ -218,7 +218,7 @@ export class AppComponent {
   getBreadCrumbExample3():Example {
     return {
       title: "Example 3 - without a link to the home page",
-      textHtml: " <h21-mat-breadcrumb [showHomeLink]=\"false\"></h21-mat-breadcrumb>",
+      textHtml: " <h21-breadcrumbs [showHomeLink]=\"false\"></h21-breadcrumbs>",
       textCss: ".breadcrumb-nav {\n" +
       "  border-bottom: 1px solid #d6d6d6;\n" +
       "  padding: 3px 0;\n" +
@@ -294,12 +294,12 @@ export class AppComponent {
       "import { BreadCrumb } from \"../../dto/BreadCrumb\";\n" +
       "\n" +
       "@Component({\n" +
-      "  selector: 'h21-mat-breadcrumb',\n" +
-      "  templateUrl: './h21-mat-breadcrumb.component.html',\n" +
-      "  styleUrls: ['./h21-mat-breadcrumb.component.css']\n" +
+      "  selector: 'h21-breadcrumbs',\n" +
+      "  templateUrl: './h21-breadcrumbs.component.html',\n" +
+      "  styleUrls: ['./h21-breadcrumbs.component.css']\n" +
       "})\n" +
       "\n" +
-      "export class H21MatBreadCrumbComponent {\n" +
+      "export class H21BreadcrumbsComponent {\n" +
       "\n" +
       "  @Input() lastIsLink: boolean = false;\n" +
       "  @Input() showHomeLink: boolean = true;\n" +
