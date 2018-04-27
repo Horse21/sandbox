@@ -14,7 +14,6 @@ export class AppComponent {
 
   constructor(iconReg: MatIconRegistry, sanitizer: DomSanitizer, location: Location, router: Router) {
     this.location = location;
-    //this.routeLink = router.url;
     iconReg.addSvgIcon('logo', sanitizer.bypassSecurityTrustResourceUrl('./assets/img/horse21-logo.svg'));
   }
 

@@ -7,7 +7,9 @@ import {Component, EventEmitter, Output} from '@angular/core';
 })
 
 export class PageSidebarComponent {
+
   @Output()
+
   onChangeComponent: EventEmitter<string> = new EventEmitter<string>();
 
   changeComponent(event): void {
@@ -20,4 +22,5 @@ export class PageSidebarComponent {
     var link = hrefAttr.nodeValue;
     this.onChangeComponent.emit(link);
   }
+
 }
